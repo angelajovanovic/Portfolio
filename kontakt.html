@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js.js"></script>
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="header" class="header">
+        <div class="unutrasnjiHed">
+            <div class="containerLogo">
+                <h1>Anđela<span>J</span></h1>
+            </div>
+
+            <ul id="navigacija" class="nav">
+                <li><a href="pocetna.html">Početna</a></li>
+                <li><a href="biografija.html">Biografija</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a href="vestine.html">Usluge</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="kontakt">
+
+        <form name="MojaForma" action=""> 
+
+            <h2>Kontaktiraj me!</h2>
+            <br>
+
+        <table align="center">
+
+           <div class="form">
+            <label class="form-label" for="user">Vaše ime:</label>
+                 <input class="name" type="text" name="text"  id="user" minlength="3" required autofocus placeholder="Vase ime"><br>
+           </div>
+                 <br>
+            
+            
+            <label class="form-label" for="user1">Vaše prezime:</label>
+                <input class="name1" type="text" name="text"  id="user1" placeholder="Vase prezime" required><br>
+                <br>
+
+            <label class="form-label" for="email">E-mail:</label>
+                <input class="form-input" type="email" name="email" id="email" placeholder="nekoneko@gmail.com" required>
+                    <br>
+                     <br>  
+
+            <label class="form-label" for="pass">Lozinka:</label>
+                <input class="form-input" type="password" id="pass" required><br>
+                    <br>
+
+            <label class="form-label" for="passconf">Potvrdite lozinku:</label>
+                <input class="form-input" type="password" id="passconf" onclick="provera(this)" required ><br>
+                     <br>
+        
+            <button type="submit" class="btn" onclick="provera()">
+                <span class="content">Pošalji!</span>
+            </button>
+        </table>
+        </form>
+    </div>
+
+
+    <footer class="futer">
+        <div id="futer_aj">
+            <p>Andjela Jovanovic 2021 &copy;</p>
+        </div>
+    </footer>
+</body>
+</html>
